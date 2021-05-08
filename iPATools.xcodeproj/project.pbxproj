@@ -14,9 +14,12 @@
 		DB585BDB26467FCE008DE72A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB585BDA26467FCE008DE72A /* Assets.xcassets */; };
 		DB585BDE26467FCE008DE72A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB585BDC26467FCE008DE72A /* LaunchScreen.storyboard */; };
 		DB585BE126467FCE008DE72A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB585BE026467FCE008DE72A /* main.m */; };
+		E455804AC59C4F0DD62E61AE /* Pods_iPATools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80E46F9F826C49A85F8B610 /* Pods_iPATools.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8119D5482A84A823167995D7 /* Pods-iPATools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPATools.release.xcconfig"; path = "Target Support Files/Pods-iPATools/Pods-iPATools.release.xcconfig"; sourceTree = "<group>"; };
+		8D3E686A62F9886E8ECC9154 /* Pods-iPATools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPATools.debug.xcconfig"; path = "Target Support Files/Pods-iPATools/Pods-iPATools.debug.xcconfig"; sourceTree = "<group>"; };
 		DB585BCB26467FCC008DE72A /* iPATools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPATools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB585BCE26467FCC008DE72A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DB585BCF26467FCC008DE72A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +32,7 @@
 		DB585BDD26467FCE008DE72A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB585BDF26467FCE008DE72A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB585BE026467FCE008DE72A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F80E46F9F826C49A85F8B610 /* Pods_iPATools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iPATools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +40,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E455804AC59C4F0DD62E61AE /* Pods_iPATools.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26BCEF87734257250F7D0647 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F80E46F9F826C49A85F8B610 /* Pods_iPATools.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC3F82496311ECF0F0FE1D29 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D3E686A62F9886E8ECC9154 /* Pods-iPATools.debug.xcconfig */,
+				8119D5482A84A823167995D7 /* Pods-iPATools.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DB585BC226467FCC008DE72A = {
 			isa = PBXGroup;
 			children = (
 				DB585BCD26467FCC008DE72A /* iPATools */,
 				DB585BCC26467FCC008DE72A /* Products */,
+				BC3F82496311ECF0F0FE1D29 /* Pods */,
+				26BCEF87734257250F7D0647 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +108,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB585BE426467FCE008DE72A /* Build configuration list for PBXNativeTarget "iPATools" */;
 			buildPhases = (
+				26846F4C90978D838D8CE4BF /* [CP] Check Pods Manifest.lock */,
 				DB585BC726467FCC008DE72A /* Sources */,
 				DB585BC826467FCC008DE72A /* Frameworks */,
 				DB585BC926467FCC008DE72A /* Resources */,
@@ -139,6 +165,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26846F4C90978D838D8CE4BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iPATools-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DB585BC726467FCC008DE72A /* Sources */ = {
@@ -288,17 +339,20 @@
 		};
 		DB585BE526467FCE008DE72A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D3E686A62F9886E8ECC9154 /* Pods-iPATools.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W5ELC54N2N;
 				INFOPLIST_FILE = iPATools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jumbo.iPATools;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jumbo.iaptools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -306,17 +360,20 @@
 		};
 		DB585BE626467FCE008DE72A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8119D5482A84A823167995D7 /* Pods-iPATools.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W5ELC54N2N;
 				INFOPLIST_FILE = iPATools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jumbo.iPATools;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jumbo.iaptools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
