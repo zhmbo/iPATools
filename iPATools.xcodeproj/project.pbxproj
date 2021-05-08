@@ -48,6 +48,8 @@
 		DBCAE95D26468B0C009E50CE /* ZBResignViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBResignViewController.m; sourceTree = "<group>"; };
 		DBCAE96026468B30009E50CE /* ZBNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBNavigationController.h; sourceTree = "<group>"; };
 		DBCAE96126468B30009E50CE /* ZBNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBNavigationController.m; sourceTree = "<group>"; };
+		DBCAE96726469F37009E50CE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		DBCAE96826469F42009E50CE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F80E46F9F826C49A85F8B610 /* Pods_iPATools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iPATools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 		DB585BC226467FCC008DE72A = {
 			isa = PBXGroup;
 			children = (
+				DBCAE96626469F09009E50CE /* doc */,
 				DB585BCD26467FCC008DE72A /* iPATools */,
 				DB585BCC26467FCC008DE72A /* Products */,
 				BC3F82496311ECF0F0FE1D29 /* Pods */,
@@ -373,6 +376,15 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		DBCAE96626469F09009E50CE /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				DBCAE96726469F37009E50CE /* .gitignore */,
+				DBCAE96826469F42009E50CE /* README.md */,
+			);
+			name = doc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
