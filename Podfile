@@ -6,5 +6,6 @@ target 'iPATools' do
   use_frameworks!
 
   # Pods for iPATools
+#  pod 'ZBObjectiveCBeaver'
 
 end

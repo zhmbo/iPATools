@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DB585BD026467FCC008DE72A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB585BCF26467FCC008DE72A /* AppDelegate.m */; };
-		DB585BD326467FCC008DE72A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB585BD226467FCC008DE72A /* SceneDelegate.m */; };
-		DB585BD626467FCC008DE72A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB585BD526467FCC008DE72A /* ViewController.m */; };
-		DB585BD926467FCC008DE72A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB585BD726467FCC008DE72A /* Main.storyboard */; };
-		DB585BDB26467FCE008DE72A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB585BDA26467FCE008DE72A /* Assets.xcassets */; };
-		DB585BDE26467FCE008DE72A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB585BDC26467FCE008DE72A /* LaunchScreen.storyboard */; };
-		DB585BE126467FCE008DE72A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB585BE026467FCE008DE72A /* main.m */; };
+		DB585C08264684BA008DE72A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB585C06264684BA008DE72A /* main.m */; };
+		DB585C09264684BA008DE72A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB585C07264684BA008DE72A /* AppDelegate.m */; };
+		DB585C1426468533008DE72A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB585C0E26468533008DE72A /* LaunchScreen.storyboard */; };
+		DB585C1C264685B8008DE72A /* ZBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB585C1B264685B8008DE72A /* ZBBaseViewController.m */; };
+		DB585C21264685D9008DE72A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB585C20264685D9008DE72A /* Images.xcassets */; };
+		DB585C302646869F008DE72A /* ZBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB585C2F2646869F008DE72A /* ZBTabBarController.m */; };
+		DBCAE94B26468A9D009E50CE /* ZBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCAE94A26468A9D009E50CE /* ZBHomeViewController.m */; };
+		DBCAE95026468ACD009E50CE /* ZBCertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCAE94F26468ACD009E50CE /* ZBCertViewController.m */; };
+		DBCAE95626468AE5009E50CE /* ZBiPAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCAE95526468AE5009E50CE /* ZBiPAViewController.m */; };
+		DBCAE95A26468AF5009E50CE /* ZBProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCAE95926468AF5009E50CE /* ZBProfileViewController.m */; };
+		DBCAE95E26468B0C009E50CE /* ZBResignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCAE95D26468B0C009E50CE /* ZBResignViewController.m */; };
+		DBCAE96226468B30009E50CE /* ZBNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCAE96126468B30009E50CE /* ZBNavigationController.m */; };
 		E455804AC59C4F0DD62E61AE /* Pods_iPATools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80E46F9F826C49A85F8B610 /* Pods_iPATools.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,17 +26,28 @@
 		8119D5482A84A823167995D7 /* Pods-iPATools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPATools.release.xcconfig"; path = "Target Support Files/Pods-iPATools/Pods-iPATools.release.xcconfig"; sourceTree = "<group>"; };
 		8D3E686A62F9886E8ECC9154 /* Pods-iPATools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPATools.debug.xcconfig"; path = "Target Support Files/Pods-iPATools/Pods-iPATools.debug.xcconfig"; sourceTree = "<group>"; };
 		DB585BCB26467FCC008DE72A /* iPATools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPATools.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB585BCE26467FCC008DE72A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		DB585BCF26467FCC008DE72A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DB585BD126467FCC008DE72A /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		DB585BD226467FCC008DE72A /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		DB585BD426467FCC008DE72A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DB585BD526467FCC008DE72A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		DB585BD826467FCC008DE72A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DB585BDA26467FCE008DE72A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DB585BDD26467FCE008DE72A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB585BDF26467FCE008DE72A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DB585BE026467FCE008DE72A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DB585C05264684BA008DE72A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DB585C06264684BA008DE72A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DB585C07264684BA008DE72A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DB585C0F26468533008DE72A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB585C1A264685B8008DE72A /* ZBBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBBaseViewController.h; sourceTree = "<group>"; };
+		DB585C1B264685B8008DE72A /* ZBBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBBaseViewController.m; sourceTree = "<group>"; };
+		DB585C20264685D9008DE72A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DB585C2E2646869F008DE72A /* ZBTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBTabBarController.h; sourceTree = "<group>"; };
+		DB585C2F2646869F008DE72A /* ZBTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBTabBarController.m; sourceTree = "<group>"; };
+		DBCAE94926468A9D009E50CE /* ZBHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBHomeViewController.h; sourceTree = "<group>"; };
+		DBCAE94A26468A9D009E50CE /* ZBHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBHomeViewController.m; sourceTree = "<group>"; };
+		DBCAE94E26468ACD009E50CE /* ZBCertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBCertViewController.h; sourceTree = "<group>"; };
+		DBCAE94F26468ACD009E50CE /* ZBCertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBCertViewController.m; sourceTree = "<group>"; };
+		DBCAE95426468AE5009E50CE /* ZBiPAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBiPAViewController.h; sourceTree = "<group>"; };
+		DBCAE95526468AE5009E50CE /* ZBiPAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBiPAViewController.m; sourceTree = "<group>"; };
+		DBCAE95826468AF5009E50CE /* ZBProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBProfileViewController.h; sourceTree = "<group>"; };
+		DBCAE95926468AF5009E50CE /* ZBProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBProfileViewController.m; sourceTree = "<group>"; };
+		DBCAE95C26468B0C009E50CE /* ZBResignViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBResignViewController.h; sourceTree = "<group>"; };
+		DBCAE95D26468B0C009E50CE /* ZBResignViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBResignViewController.m; sourceTree = "<group>"; };
+		DBCAE96026468B30009E50CE /* ZBNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBNavigationController.h; sourceTree = "<group>"; };
+		DBCAE96126468B30009E50CE /* ZBNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBNavigationController.m; sourceTree = "<group>"; };
 		F80E46F9F826C49A85F8B610 /* Pods_iPATools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iPATools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -61,7 +77,6 @@
 				8D3E686A62F9886E8ECC9154 /* Pods-iPATools.debug.xcconfig */,
 				8119D5482A84A823167995D7 /* Pods-iPATools.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -86,19 +101,278 @@
 		DB585BCD26467FCC008DE72A /* iPATools */ = {
 			isa = PBXGroup;
 			children = (
-				DB585BCE26467FCC008DE72A /* AppDelegate.h */,
-				DB585BCF26467FCC008DE72A /* AppDelegate.m */,
-				DB585BD126467FCC008DE72A /* SceneDelegate.h */,
-				DB585BD226467FCC008DE72A /* SceneDelegate.m */,
-				DB585BD426467FCC008DE72A /* ViewController.h */,
-				DB585BD526467FCC008DE72A /* ViewController.m */,
-				DB585BD726467FCC008DE72A /* Main.storyboard */,
-				DB585BDA26467FCE008DE72A /* Assets.xcassets */,
-				DB585BDC26467FCE008DE72A /* LaunchScreen.storyboard */,
+				DB585C1026468533008DE72A /* Base */,
+				DBCAE9292646886D009E50CE /* Modulars */,
+				DB585C0C26468533008DE72A /* Resources */,
+				DB585C04264684BA008DE72A /* proj */,
 				DB585BDF26467FCE008DE72A /* Info.plist */,
-				DB585BE026467FCE008DE72A /* main.m */,
 			);
 			path = iPATools;
+			sourceTree = "<group>";
+		};
+		DB585C04264684BA008DE72A /* proj */ = {
+			isa = PBXGroup;
+			children = (
+				DB585C06264684BA008DE72A /* main.m */,
+				DB585C05264684BA008DE72A /* AppDelegate.h */,
+				DB585C07264684BA008DE72A /* AppDelegate.m */,
+			);
+			path = proj;
+			sourceTree = "<group>";
+		};
+		DB585C0C26468533008DE72A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DB585C20264685D9008DE72A /* Images.xcassets */,
+				DB585C0E26468533008DE72A /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DB585C1026468533008DE72A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DB585C1126468533008DE72A /* ViewControllers */,
+				DB585C1226468533008DE72A /* Views */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DB585C1126468533008DE72A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DB585C2E2646869F008DE72A /* ZBTabBarController.h */,
+				DB585C2F2646869F008DE72A /* ZBTabBarController.m */,
+				DB585C1A264685B8008DE72A /* ZBBaseViewController.h */,
+				DB585C1B264685B8008DE72A /* ZBBaseViewController.m */,
+				DBCAE96026468B30009E50CE /* ZBNavigationController.h */,
+				DBCAE96126468B30009E50CE /* ZBNavigationController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DB585C1226468533008DE72A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DBCAE9292646886D009E50CE /* Modulars */ = {
+			isa = PBXGroup;
+			children = (
+				DBCAE93F26468A7A009E50CE /* Home */,
+				DBCAE93026468A7A009E50CE /* Cert */,
+				DBCAE93526468A7A009E50CE /* iPA */,
+				DBCAE93A26468A7A009E50CE /* Profile */,
+				DBCAE94426468A7A009E50CE /* Resign */,
+			);
+			path = Modulars;
+			sourceTree = "<group>";
+		};
+		DBCAE93026468A7A009E50CE /* Cert */ = {
+			isa = PBXGroup;
+			children = (
+				DBCAE94E26468ACD009E50CE /* ZBCertViewController.h */,
+				DBCAE94F26468ACD009E50CE /* ZBCertViewController.m */,
+				DBCAE93326468A7A009E50CE /* ViewControllers */,
+				DBCAE93126468A7A009E50CE /* ViewModels */,
+				DBCAE93226468A7A009E50CE /* Models */,
+				DBCAE93426468A7A009E50CE /* Views */,
+			);
+			path = Cert;
+			sourceTree = "<group>";
+		};
+		DBCAE93126468A7A009E50CE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DBCAE93226468A7A009E50CE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DBCAE93326468A7A009E50CE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DBCAE93426468A7A009E50CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DBCAE93526468A7A009E50CE /* iPA */ = {
+			isa = PBXGroup;
+			children = (
+				DBCAE95426468AE5009E50CE /* ZBiPAViewController.h */,
+				DBCAE95526468AE5009E50CE /* ZBiPAViewController.m */,
+				DBCAE93826468A7A009E50CE /* ViewControllers */,
+				DBCAE93626468A7A009E50CE /* ViewModels */,
+				DBCAE93726468A7A009E50CE /* Models */,
+				DBCAE93926468A7A009E50CE /* Views */,
+			);
+			path = iPA;
+			sourceTree = "<group>";
+		};
+		DBCAE93626468A7A009E50CE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DBCAE93726468A7A009E50CE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DBCAE93826468A7A009E50CE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DBCAE93926468A7A009E50CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DBCAE93A26468A7A009E50CE /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				DBCAE95826468AF5009E50CE /* ZBProfileViewController.h */,
+				DBCAE95926468AF5009E50CE /* ZBProfileViewController.m */,
+				DBCAE93D26468A7A009E50CE /* ViewControllers */,
+				DBCAE93B26468A7A009E50CE /* ViewModels */,
+				DBCAE93C26468A7A009E50CE /* Models */,
+				DBCAE93E26468A7A009E50CE /* Views */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		DBCAE93B26468A7A009E50CE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DBCAE93C26468A7A009E50CE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DBCAE93D26468A7A009E50CE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DBCAE93E26468A7A009E50CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DBCAE93F26468A7A009E50CE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DBCAE94926468A9D009E50CE /* ZBHomeViewController.h */,
+				DBCAE94A26468A9D009E50CE /* ZBHomeViewController.m */,
+				DBCAE94226468A7A009E50CE /* ViewControllers */,
+				DBCAE94026468A7A009E50CE /* ViewModels */,
+				DBCAE94126468A7A009E50CE /* Models */,
+				DBCAE94326468A7A009E50CE /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DBCAE94026468A7A009E50CE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DBCAE94126468A7A009E50CE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DBCAE94226468A7A009E50CE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DBCAE94326468A7A009E50CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DBCAE94426468A7A009E50CE /* Resign */ = {
+			isa = PBXGroup;
+			children = (
+				DBCAE95C26468B0C009E50CE /* ZBResignViewController.h */,
+				DBCAE95D26468B0C009E50CE /* ZBResignViewController.m */,
+				DBCAE94726468A7A009E50CE /* ViewControllers */,
+				DBCAE94526468A7A009E50CE /* ViewModels */,
+				DBCAE94626468A7A009E50CE /* Models */,
+				DBCAE94826468A7A009E50CE /* Views */,
+			);
+			path = Resign;
+			sourceTree = "<group>";
+		};
+		DBCAE94526468A7A009E50CE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DBCAE94626468A7A009E50CE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DBCAE94726468A7A009E50CE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DBCAE94826468A7A009E50CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +402,9 @@
 		DB585BC326467FCC008DE72A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZB;
 				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = "@itzhangbao.com";
 				TargetAttributes = {
 					DB585BCA26467FCC008DE72A = {
 						CreatedOnToolsVersion = 12.4;
@@ -158,9 +434,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB585BDE26467FCE008DE72A /* LaunchScreen.storyboard in Resources */,
-				DB585BDB26467FCE008DE72A /* Assets.xcassets in Resources */,
-				DB585BD926467FCC008DE72A /* Main.storyboard in Resources */,
+				DB585C1426468533008DE72A /* LaunchScreen.storyboard in Resources */,
+				DB585C21264685D9008DE72A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,28 +471,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB585BD626467FCC008DE72A /* ViewController.m in Sources */,
-				DB585BD026467FCC008DE72A /* AppDelegate.m in Sources */,
-				DB585BE126467FCE008DE72A /* main.m in Sources */,
-				DB585BD326467FCC008DE72A /* SceneDelegate.m in Sources */,
+				DBCAE95A26468AF5009E50CE /* ZBProfileViewController.m in Sources */,
+				DBCAE95026468ACD009E50CE /* ZBCertViewController.m in Sources */,
+				DB585C09264684BA008DE72A /* AppDelegate.m in Sources */,
+				DBCAE95626468AE5009E50CE /* ZBiPAViewController.m in Sources */,
+				DBCAE95E26468B0C009E50CE /* ZBResignViewController.m in Sources */,
+				DBCAE96226468B30009E50CE /* ZBNavigationController.m in Sources */,
+				DB585C1C264685B8008DE72A /* ZBBaseViewController.m in Sources */,
+				DB585C08264684BA008DE72A /* main.m in Sources */,
+				DBCAE94B26468A9D009E50CE /* ZBHomeViewController.m in Sources */,
+				DB585C302646869F008DE72A /* ZBTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DB585BD726467FCC008DE72A /* Main.storyboard */ = {
+		DB585C0E26468533008DE72A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DB585BD826467FCC008DE72A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DB585BDC26467FCE008DE72A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DB585BDD26467FCE008DE72A /* Base */,
+				DB585C0F26468533008DE72A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
