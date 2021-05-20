@@ -30,7 +30,7 @@
 
 - (void)addChildViewControllers {
     [self addChild:[ZBHomeViewController new] t:@"资源" ni:@"" sli:@""];
-    [self addChild:[ZBiPAViewController new] t:@"下载" ni:@"" sli:@""];
+    [self addChild:[ZBiPAViewController new] t:@"iPA" ni:@"" sli:@""];
     [self addChild:[ZBResignViewController new] t:@"签名" ni:@"" sli:@""];
     [self addChild:[ZBCertViewController new] t:@"证书" ni:@"" sli:@""];
     [self addChild:[ZBProfileViewController new] t:@"我" ni:@"" sli:@""];

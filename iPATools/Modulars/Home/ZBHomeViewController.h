@@ -6,11 +6,11 @@
 //  Copyright © 2021 @itzhangbao.com. All rights reserved.
 //
 
-#import "ZBBaseViewController.h"
+#import "ZBTableViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZBHomeViewController : ZBBaseViewController
+@interface ZBHomeViewController : ZBTableViewController
 
 @end
 

@@ -1,3 +1,30 @@
-PODFILE CHECKSUM: 6a0a2491600c229e3eb3d16562c72ac2575eac91
+PODS:
+  - GCDWebServer/Core (3.5.4)
+  - GCDWebServer/WebUploader (3.5.4):
+    - GCDWebServer/Core
+  - lottie-ios (3.2.2)
+  - Masonry (1.1.0)
+  - SwiftTheme (0.6.0)
+
+DEPENDENCIES:
+  - GCDWebServer/WebUploader (~> 3.0)
+  - lottie-ios
+  - Masonry
+  - SwiftTheme
+
+SPEC REPOS:
+  trunk:
+    - GCDWebServer
+    - lottie-ios
+    - Masonry
+    - SwiftTheme
+
+SPEC CHECKSUMS:
+  GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
+  lottie-ios: a033bb989eea77d9f99cc4e2bbdd3788229761ad
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SwiftTheme: 50c3b3d38bdee43212af1f4ec0fb95dec550b2be
+
+PODFILE CHECKSUM: ba42bc2f67602e0c9b86da0cd742e5dfc5a17cc0
 
 COCOAPODS: 1.10.1
