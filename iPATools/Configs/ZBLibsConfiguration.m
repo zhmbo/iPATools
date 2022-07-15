@@ -1,38 +1,38 @@
 //
-//  ZBLibManager.m
+//  ZBLibsConfiguration.m
 //  iPATools
 //
 //  Created by jumbo on 2021/5/18.
 //  Copyright © 2021 @itzhangbao.com. All rights reserved.
 //
 
-#import "ZBLibManager.h"
+#import "ZBLibsConfiguration.h"
 
 // Download
 #import "YCDownloadSession.h"
-#import "ZBiPAModel.h"
-
 #import "HTTPServer.h"
+#import "ZBiPAModel.h"
+#import "ZBDownLoadManager.h"
 
-@interface ZBLibManager()
+@interface ZBLibsConfiguration()
 
 @property (nonatomic, strong) HTTPServer * httpServer;
 @property (nonatomic) UIBackgroundTaskIdentifier backgroundIdentify;
 
 @end
 
-@implementation ZBLibManager
+@implementation ZBLibsConfiguration
 
 + (instancetype)shared {
     static id shared = nil;
     static dispatch_once_t t;
     dispatch_once(&t, ^{
-        shared = [ZBLibManager new];
+        shared = [ZBLibsConfiguration new];
     });
     return shared;
 }
 
-- (void)setupLibsWithWindow:(UIWindow *)window {
+- (void)configLibsWithWindow:(UIWindow *)window {
     [self setUpDownload];
     [self setupServer];
 }
@@ -61,10 +61,8 @@
 }
 
 - (void)setUpDownload {
-    NSString *path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, true).firstObject;
-    path = [path stringByAppendingPathComponent:WaitSignIPA_Path];
     YCDConfig *config = [YCDConfig new];
-    config.saveRootPath = path;
+    config.saveRootPath = WaitSignIPA_RootPath;
     config.maxTaskCount = 2;
     config.taskCachekMode = YCDownloadTaskCacheModeKeep;
     config.launchAutoResumeDownload = true;
@@ -80,25 +78,16 @@
     if (item.downloadStatus == YCDownloadStatusFinished) {
         ZBiPAModel *mo = [ZBiPAModel modelWithData:item.extraData];
         NSString *detail = [NSString stringWithFormat:@"%@，已经下载完成！", mo.name];
-        [self localPushWithTitle:@"YCDownloadSession" detail:detail];
+        
+        UILocalNotification *localNote = [[UILocalNotification alloc] init];
+        localNote.fireDate = [NSDate dateWithTimeIntervalSinceNow:3.0];
+        localNote.alertBody = detail;
+        localNote.alertAction = @"滑动来解锁";
+        localNote.hasAction = NO;
+        localNote.soundName = @"default";
+        localNote.userInfo = @{@"type" : @1};
+        [[UIApplication sharedApplication] scheduleLocalNotification:localNote];
     }
-}
-
-// MARK: - local push
-- (void)localPushWithTitle:(NSString *)title detail:(NSString *)body  {
-    if (title.length == 0) return;
-    UILocalNotification *localNote = [[UILocalNotification alloc] init];
-    localNote.fireDate = [NSDate dateWithTimeIntervalSinceNow:3.0];
-    localNote.alertBody = body;
-    localNote.alertAction = @"滑动来解锁";
-    localNote.hasAction = NO;
-    localNote.soundName = @"default";
-    localNote.userInfo = @{@"type" : @1};
-    [[UIApplication sharedApplication] scheduleLocalNotification:localNote];
-}
-
--(void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)(void))completionHandler {
-    [[YCDownloader downloader] addCompletionHandler:completionHandler identifier:identifier];
 }
 
 @end

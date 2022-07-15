@@ -22,28 +22,6 @@
         "version":"4.4.0"
     },
     {
-        "_id":10003,
-        "name":"1000度的钢丝网和彩色黏土",
-        "url":"https://vd1.bdstatic.com/mda-hiqmm8s10vww26sx/mda-hiqmm8s10vww26sx.mp4?playlist=%5B%22hd%22%5D&auth_key=1506158514-0-0-6cde713ec6e6a15bd856fbb4f2564658&bcevod_channel=searchbox_feed",
-        "icon":"http://icon.",
-        "size":"133.99 MB",
-        "desc":"看小说听书必备app",
-        "bundleid":"",
-        "type":"共享版",
-        "version":"4.4.0"
-    },
-    {
-        "_id":10004,
-        "name":"三叔，白浅上神",
-        "url":"http://vd1.bdstatic.com/mda-hiti1y2h7ujkruk7/mda-hiti1y2h7ujkruk7.mp4?playlist=%5B%22hd%22%5D&auth_key=1506245981-0-0-8df55a1752262f8ca985389c69687bc5&bcevod_channel=pae_search",
-        "icon":"http://icon.",
-        "size":"2971534",
-        "desc":"看小说听书必备app",
-        "bundleid":"",
-        "type":"共享版",
-        "version":"4.4.0"
-    },
-    {
         "_id":10005,
         "name":"酷狗",
         "url":"http://js.yozs.net/KuWoYinYuePure.ipa",
@@ -75,6 +53,30 @@
         "size":"2971534",
         "desc":"音乐",
         "bundleid":"com.gamexx.tgqyj",
+        "type":"共享版",
+        "version":"4.4.0",
+        "extension":"ipa"
+    },
+    {
+        "_id":10008,
+        "name":"KuWoYinYuePure",
+        "url":"http://ipa.itzhangbao.com/KuWoYinYuePure.ipa",
+        "icon":"http://icon.",
+        "size":"2971534",
+        "desc":"音乐",
+        "bundleid":"com.gamexx.KuWoYinYuePure",
+        "type":"共享版",
+        "version":"4.4.0",
+        "extension":"ipa"
+    },
+    {
+        "_id":10009,
+        "name":"Payload",
+        "url":"http://ipa.itzhangbao.com/Payload.ipa",
+        "icon":"http://icon.",
+        "size":"2971534",
+        "desc":"音乐",
+        "bundleid":"com.gamexx.Payload",
         "type":"共享版",
         "version":"4.4.0",
         "extension":"ipa"

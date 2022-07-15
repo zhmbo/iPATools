@@ -7,7 +7,9 @@ target 'iPATools' do
 
   # Pods for iPATools
 #  pod 'ZBObjectiveCBeaver'
+  pod 'OpenSSL-Universal', '1.0.2.13'
   pod 'Masonry'
   pod 'SwiftTheme'
   pod 'lottie-ios'
 end
+

@@ -7,7 +7,8 @@
 
 #import "AppDelegate.h"
 #import "ZBTabBarController.h"
-#import "ZBLibManager.h"
+#import "ZBLibsConfiguration.h"
+#import "ZBDownLoadManager.h"
 
 @interface AppDelegate ()
 
@@ -29,30 +30,19 @@
     [application registerUserNotificationSettings:settings];
     
     // setup libs
-    [[ZBLibManager shared] setupLibsWithWindow:self.window];
+    [[ZBLibsConfiguration shared] configLibsWithWindow:self.window];
     
     return YES;
 }
 
-
 -(void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)(void))completionHandler{
-    [[ZBLibManager shared] application:application handleEventsForBackgroundURLSession:identifier completionHandler:completionHandler];
+    [ZBDownLoadManager addCompletionHandler:completionHandler identifier:identifier];
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    [ZBDownLoadManager saveItemWithURL:url];
+    return  YES;
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application {
-    NSLog(@"%s", __func__);
-}
-
-- (void)applicationWillTerminate:(UIApplication *)application {
-    NSLog(@"%s", __func__);
-}
-
-- (void)applicationDidEnterBackground:(UIApplication *)application{
-    
-}
 
 @end

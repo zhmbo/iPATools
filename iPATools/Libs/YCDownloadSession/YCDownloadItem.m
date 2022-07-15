@@ -213,7 +213,6 @@ NSString * const kDownloadTaskFinishedNoti = @"kDownloadTaskFinishedNoti";
 
 - (NSString *)saveDirectory {
     NSString *path = [self saveRootPath];
-//    path = [path stringByAppendingPathComponent:(self.fileType ? self.fileType : @"data")];
     [YCDownloadUtils createPathIfNotExist:path];
     return path;
 //    NSString *path = [self saveUidDirectory];

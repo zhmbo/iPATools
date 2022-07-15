@@ -383,7 +383,7 @@ static NSString * const kIsAllowCellar = @"kIsAllowCellar";
     [self callBgCompletedHandler];
 }
 
--(void)addCompletionHandler:(BGCompletedHandler)handler identifier:(NSString *)identifier{
+-(void)addCompletionHandler:(BGCompletedHandler)handler identifier:(NSString *)identifier {
     if ([[self backgroundSessionIdentifier] isEqualToString:identifier]) {
         self.completedHandler = handler;
         //fix a crash in backgroud. for:  reason: backgroundDownload owner pid:252 preventSuspend  preventThrottleDownUI  preventIdleSleep  preventSuspendOnSleep

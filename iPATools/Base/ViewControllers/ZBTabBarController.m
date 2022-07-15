@@ -51,6 +51,11 @@
     [self addChildViewController:nav_vc];
 }
 
++ (void)selectShowVc:(NSInteger)index {
+    ZBTabBarController *tabbar_vc = (ZBTabBarController *)UIApplication.sharedApplication.keyWindow.rootViewController;
+    [tabbar_vc setSelectedIndex:index];
+}
+
 /*
 #pragma mark - Navigation
 

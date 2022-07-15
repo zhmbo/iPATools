@@ -11,8 +11,9 @@
 #import "ZBiPATableViewCell.h"
 #import "ZBiPAModel.h"
 #import "ZBiPAUtils.h"
+#import "ZBDownLoadManager.h"
 
-@interface ZBiPAViewController ()
+@interface ZBiPAViewController ()<UIDocumentPickerDelegate>
 
 @end
 
@@ -21,7 +22,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UIBarButtonItem *addItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(tapAddBarButton:)];
+    self.navigationItem.rightBarButtonItem = addItem;
+    
     [self registerClasses: @[[ZBiPATableViewCell class]]];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(downloadTaskFinishedNoti:) name:kDownloadTaskFinishedNoti object:nil];
+}
+
+- (void)tapAddBarButton:(id)sender {
+    UIDocumentPickerViewController *documentPicker = [[UIDocumentPickerViewController alloc] initWithDocumentTypes:@[@"public.item"] inMode:UIDocumentPickerModeImport];
+    documentPicker.delegate = self;
+    [self presentViewController:documentPicker animated:YES completion:nil];
+}
+
+- (void)documentPicker:(UIDocumentPickerViewController *)controller didPickDocumentsAtURLs:(NSArray<NSURL *> *)urls {
+    
+    if (controller.documentPickerMode == UIDocumentPickerModeImport) {
+        [ZBDownLoadManager saveItemWithURL:urls.lastObject];
+        [self reloadAllData];
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -31,14 +51,23 @@
 
 - (void)reloadAllData {
     [self.sourceData removeAllObjects];
-    [self.sourceData addObject:[NSMutableArray arrayWithArray:[YCDownloadManager downloadList]]];
-    [self.sourceData addObject:[NSMutableArray arrayWithArray:[YCDownloadManager finishList]]];
+    NSMutableArray *downloadList = [NSMutableArray arrayWithArray:[YCDownloadManager downloadList]];
+    NSMutableArray *finishList = [NSMutableArray arrayWithArray:[YCDownloadManager finishList]];
+    [self.sourceData addObject:downloadList];
+    [self.sourceData addObject:finishList];
     [self.tableView reloadData];
 }
 
 - (void)setupTableView {
     [super setupTableView];
     self.tableView.rowHeight = 112;
+}
+
+- (void)downloadTaskFinishedNoti:(NSNotification *)noti{
+    YCDownloadItem *item = noti.object;
+    if (item.downloadStatus == YCDownloadStatusFinished) {
+        [self reloadAllData];
+    }
 }
 
 // MARK: - DataSource

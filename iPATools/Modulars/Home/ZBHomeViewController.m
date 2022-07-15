@@ -57,6 +57,7 @@ ZBHomeCellDelegate
         item.extraData = [ZBiPAModel dataWithModel:model];
         item.enableSpeed = true;
         item.fileExtension = model.extension;
+        item.fileType = model.extension;
         [YCDownloadManager startDownloadWithItem:item];
     }else { // 再次点击
         if (item.downloadStatus == YCDownloadStatusDownloading) {

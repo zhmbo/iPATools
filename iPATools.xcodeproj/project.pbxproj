@@ -53,10 +53,11 @@
 		DB67BE68265259C500A911F4 /* DDRange.m in Sources */ = {isa = PBXBuildFile; fileRef = DB67BE4B265259C500A911F4 /* DDRange.m */; };
 		DB67BE69265259C500A911F4 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = DB67BE4E265259C500A911F4 /* GCDAsyncSocket.m */; };
 		DB67BE6A265259C500A911F4 /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = DB67BE50265259C500A911F4 /* HTTPServer.m */; };
-		DB67BE752653B04F00A911F4 /* ZBLibManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB67BE742653B04E00A911F4 /* ZBLibManager.m */; };
+		DB67BE752653B04F00A911F4 /* ZBLibsConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = DB67BE742653B04E00A911F4 /* ZBLibsConfiguration.m */; };
 		DB67BE782653CDD200A911F4 /* ZBiPAUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DB67BE772653CDD100A911F4 /* ZBiPAUtils.m */; };
 		DB7DDC3E26563B1400D2CE58 /* NSString+ZBKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7DDC3D26563B1400D2CE58 /* NSString+ZBKit.m */; };
 		DB7DDC4126563B9F00D2CE58 /* UIApplication+ZBKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7DDC4026563B9F00D2CE58 /* UIApplication+ZBKit.m */; };
+		DBA3184226590B5B00A38BDA /* ZBDownLoadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA3184126590B5B00A38BDA /* ZBDownLoadManager.m */; };
 		DBCAE94B26468A9D009E50CE /* ZBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCAE94A26468A9D009E50CE /* ZBHomeViewController.m */; };
 		DBCAE95026468ACD009E50CE /* ZBCertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCAE94F26468ACD009E50CE /* ZBCertViewController.m */; };
 		DBCAE95626468AE5009E50CE /* ZBiPAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCAE95526468AE5009E50CE /* ZBiPAViewController.m */; };
@@ -160,14 +161,16 @@
 		DB67BE4E265259C500A911F4 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 		DB67BE4F265259C500A911F4 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
 		DB67BE50265259C500A911F4 /* HTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPServer.m; sourceTree = "<group>"; };
-		DB67BE732653B04E00A911F4 /* ZBLibManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBLibManager.h; sourceTree = "<group>"; };
-		DB67BE742653B04E00A911F4 /* ZBLibManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBLibManager.m; sourceTree = "<group>"; };
+		DB67BE732653B04E00A911F4 /* ZBLibsConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBLibsConfiguration.h; sourceTree = "<group>"; };
+		DB67BE742653B04E00A911F4 /* ZBLibsConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBLibsConfiguration.m; sourceTree = "<group>"; };
 		DB67BE762653CDD100A911F4 /* ZBiPAUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBiPAUtils.h; sourceTree = "<group>"; };
 		DB67BE772653CDD100A911F4 /* ZBiPAUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBiPAUtils.m; sourceTree = "<group>"; };
 		DB7DDC3C26563B1400D2CE58 /* NSString+ZBKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ZBKit.h"; sourceTree = "<group>"; };
 		DB7DDC3D26563B1400D2CE58 /* NSString+ZBKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZBKit.m"; sourceTree = "<group>"; };
 		DB7DDC3F26563B9F00D2CE58 /* UIApplication+ZBKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+ZBKit.h"; sourceTree = "<group>"; };
 		DB7DDC4026563B9F00D2CE58 /* UIApplication+ZBKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+ZBKit.m"; sourceTree = "<group>"; };
+		DBA3184026590B5B00A38BDA /* ZBDownLoadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBDownLoadManager.h; sourceTree = "<group>"; };
+		DBA3184126590B5B00A38BDA /* ZBDownLoadManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBDownLoadManager.m; sourceTree = "<group>"; };
 		DBCAE94926468A9D009E50CE /* ZBHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBHomeViewController.h; sourceTree = "<group>"; };
 		DBCAE94A26468A9D009E50CE /* ZBHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBHomeViewController.m; sourceTree = "<group>"; };
 		DBCAE94E26468ACD009E50CE /* ZBCertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBCertViewController.h; sourceTree = "<group>"; };
@@ -214,6 +217,24 @@
 				8119D5482A84A823167995D7 /* Pods-iPATools.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		DB1469F726900C0F00485066 /* Sign */ = {
+			isa = PBXGroup;
+			children = (
+				DB67BE762653CDD100A911F4 /* ZBiPAUtils.h */,
+				DB67BE772653CDD100A911F4 /* ZBiPAUtils.m */,
+			);
+			path = Sign;
+			sourceTree = "<group>";
+		};
+		DB26DD7B265B439600143424 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				DB67BE732653B04E00A911F4 /* ZBLibsConfiguration.h */,
+				DB67BE742653B04E00A911F4 /* ZBLibsConfiguration.m */,
+			);
+			path = Configs;
 			sourceTree = "<group>";
 		};
 		DB294D2726491F7F0066F4C2 /* Models */ = {
@@ -268,6 +289,9 @@
 		DB585BCD26467FCC008DE72A /* iPATools */ = {
 			isa = PBXGroup;
 			children = (
+				DB1469F726900C0F00485066 /* Sign */,
+				DB26DD7B265B439600143424 /* Configs */,
+				DBA3183F2657941300A38BDA /* Managers */,
 				DB67BDAD264E840C00A911F4 /* Libs */,
 				DB294D3326493E060066F4C2 /* ZBKit */,
 				DB585C1026468533008DE72A /* Base */,
@@ -336,8 +360,6 @@
 		DB67BDAD264E840C00A911F4 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
-				DB67BE732653B04E00A911F4 /* ZBLibManager.h */,
-				DB67BE742653B04E00A911F4 /* ZBLibManager.m */,
 				DB67BE15265259C500A911F4 /* HTTPServer */,
 				DB67BDC8264E846300A911F4 /* YCDownloadSession */,
 			);
@@ -359,14 +381,14 @@
 		DB67BDCB264E846300A911F4 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				DB67BDCC264E846300A911F4 /* YCDownloadUtils.h */,
-				DB67BDCD264E846300A911F4 /* YCDownloadDB.h */,
 				DB67BDCE264E846300A911F4 /* YCDownloadSession.h */,
+				DB67BDCC264E846300A911F4 /* YCDownloadUtils.h */,
+				DB67BDD1264E846300A911F4 /* YCDownloadUtils.m */,
+				DB67BDCD264E846300A911F4 /* YCDownloadDB.h */,
+				DB67BDD3264E846300A911F4 /* YCDownloadDB.m */,
+				DB67BDD2264E846300A911F4 /* YCDownloader.h */,
 				DB67BDCF264E846300A911F4 /* YCDownloader.m */,
 				DB67BDD0264E846300A911F4 /* YCDownloadTask.h */,
-				DB67BDD1264E846300A911F4 /* YCDownloadUtils.m */,
-				DB67BDD2264E846300A911F4 /* YCDownloader.h */,
-				DB67BDD3264E846300A911F4 /* YCDownloadDB.m */,
 				DB67BDD4264E846300A911F4 /* YCDownloadTask.m */,
 			);
 			path = Core;
@@ -480,6 +502,15 @@
 			path = CocoaAsyncSocket;
 			sourceTree = "<group>";
 		};
+		DBA3183F2657941300A38BDA /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				DBA3184026590B5B00A38BDA /* ZBDownLoadManager.h */,
+				DBA3184126590B5B00A38BDA /* ZBDownLoadManager.m */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		DBCAE9292646886D009E50CE /* Modulars */ = {
 			isa = PBXGroup;
 			children = (
@@ -541,8 +572,6 @@
 				DB67BDDD264FB8D300A911F4 /* ZBiPATableViewCell.h */,
 				DB67BDDE264FB8D300A911F4 /* ZBiPATableViewCell.m */,
 				DB67BDDF264FB8D300A911F4 /* ZBiPATableViewCell.xib */,
-				DB67BE762653CDD100A911F4 /* ZBiPAUtils.h */,
-				DB67BE772653CDD100A911F4 /* ZBiPAUtils.m */,
 			);
 			path = iPA;
 			sourceTree = "<group>";
@@ -656,8 +685,7 @@
 		DB585BCA26467FCC008DE72A /* iPATools */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB585BE426467FCE008DE72A /* Build configuration list for PBXNativeTarget "iPATools" */;
-			buildPhases = (
-				26846F4C90978D838D8CE4BF /* [CP] Check Pods Manifest.lock */,
+			buildPhases = (				26846F4C90978D838D8CE4BF /* [CP] Check Pods Manifest.lock */,
 				DB585BC726467FCC008DE72A /* Sources */,
 				DB585BC826467FCC008DE72A /* Frameworks */,
 				DB585BC926467FCC008DE72A /* Resources */,
@@ -722,6 +750,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+	
 		01F892F4C9C20F48BC68EF9C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -801,6 +830,7 @@
 				DB67BE67265259C500A911F4 /* DDData.m in Sources */,
 				DB67BE68265259C500A911F4 /* DDRange.m in Sources */,
 				DB585C08264684BA008DE72A /* main.m in Sources */,
+				DBA3184226590B5B00A38BDA /* ZBDownLoadManager.m in Sources */,
 				DB294D2A26491F970066F4C2 /* ZBiPAModel.m in Sources */,
 				DB67BE5E265259C500A911F4 /* DDFileLogger.m in Sources */,
 				DB67BDE0264FB8D300A911F4 /* ZBiPATableViewCell.m in Sources */,
@@ -808,7 +838,7 @@
 				DB67BE69265259C500A911F4 /* GCDAsyncSocket.m in Sources */,
 				DB67BE6A265259C500A911F4 /* HTTPServer.m in Sources */,
 				DB67BDD9264E846300A911F4 /* YCDownloadUtils.m in Sources */,
-				DB67BE752653B04F00A911F4 /* ZBLibManager.m in Sources */,
+				DB67BE752653B04F00A911F4 /* ZBLibsConfiguration.m in Sources */,
 				DB67BE5C265259C500A911F4 /* DDLog.m in Sources */,
 				DBCAE94B26468A9D009E50CE /* ZBHomeViewController.m in Sources */,
 				DB7DDC3E26563B1400D2CE58 /* NSString+ZBKit.m in Sources */,
@@ -956,11 +986,25 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W5ELC54N2N;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Masonry/Masonry.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftTheme/SwiftTheme.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios/Lottie.framework/Headers\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenSSL-Universal\"",
+					"${PROJECT_DIR}/iPATools/Libs/libProvision/include",
+				);
 				INFOPLIST_FILE = iPATools/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/iPATools/Libs/libProvision",
 				);
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jumbo.iaptools;
@@ -977,11 +1021,25 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W5ELC54N2N;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Masonry/Masonry.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftTheme/SwiftTheme.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios/Lottie.framework/Headers\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/OpenSSL-Universal\"",
+					"${PROJECT_DIR}/iPATools/Libs/libProvision/include",
+				);
 				INFOPLIST_FILE = iPATools/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/iPATools/Libs/libProvision",
 				);
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jumbo.iaptools;
